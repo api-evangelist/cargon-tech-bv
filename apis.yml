@@ -1,8 +1,25 @@
 aid: cargon-tech-bv
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cargon-tech-bv.png
 name: Cargon Tech B.V.
-description: Cargon Tech B.V. is a company surfaced as a portfolio company of 500-global and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Cargon Tech B.V. is a supply-chain and logistics technology company backed by 500 Global.
+  Its public presence at cargon.com positions Cargon as a fast, innovative supply-chain platform with
+  powerful analytical tools for shippers and carriers, while the related Cargon TMS product (cargon.tech)
+  offers a cloud transport-management system for small carriers and freight forwarders covering dispatch,
+  fleet management, invoicing and Timocom integration. No public developer portal, API documentation,
+  OpenAPI/AsyncAPI specification, SDK, or /.well-known discovery surface was found during enrichment
+  (the cargon.com site is a client-rendered single-page app that returns its index shell for unknown
+  paths), so this profile currently carries identity and domain-security signal only.
 url: https://raw.githubusercontent.com/api-evangelist/cargon-tech-bv/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Supply Chain
+- Logistics
+- Freight
+- Transport Management
+- Analytics
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cargon-tech-bv-domain-security.yml
 - type: Website
   url: https://cargon.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
